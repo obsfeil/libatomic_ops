@@ -1,0 +1,10 @@
+^C:\BDWGC\LIBATOMIC_OPS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/bdwgc/libatomic_ops -BC:/bdwgc/libatomic_ops --check-stamp-file C:/bdwgc/libatomic_ops/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

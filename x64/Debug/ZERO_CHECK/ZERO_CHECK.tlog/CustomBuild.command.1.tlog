@@ -1,0 +1,10 @@
+^C:\BDWGC\LIBATOMIC_OPS\CMAKEFILES\0943EA00C714196EF476DCA69249F00C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/bdwgc/libatomic_ops -BC:/bdwgc/libatomic_ops --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/bdwgc/libatomic_ops/libatomic_ops.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
